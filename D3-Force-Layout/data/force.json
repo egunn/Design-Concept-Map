@@ -1,0 +1,238 @@
+{
+    "nodes": [
+        {
+            "name": "Design",
+            "value": 10
+        },
+        {
+            "name": "Clear communication",
+            "value": 8
+        },
+        {
+            "name": "Visually compelling narrative",
+            "value": 5
+        },
+        {
+            "name": "Aesthetic value",
+            "value": 8
+        },
+        {
+            "name": "Present relevant information",
+            "value": 10
+        },
+        {
+            "name": "Organize in a clear hierarchy",
+            "value": 10
+        },
+        {
+            "name": "Tell a story",
+            "value": 10
+        },
+        {
+            "name": "Logical argument",
+            "value": 10
+        },        {
+            "name": "Empathy",
+            "value": 10
+        },        {
+            "name": "Perspective-taking",
+            "value": 10
+        },        {
+            "name": "Cultural norms",
+            "value": 10
+        },        {
+            "name": "Shared values",
+            "value": 10
+        },        {
+            "name": "Discrepancies and misunderstandings",
+            "value": 10
+        },
+        {
+            "name": "Tools: typography, color, shape, line, etc.",
+            "value": 10
+        },        {
+            "name": "In a variety of media and venues",
+            "value": 10
+        },        {
+            "name": "Layers of information",
+            "value": 10
+        },        {
+            "name": "Bring user to a desired end point",
+            "value": 10
+        },        {
+            "name": "Create a shared point of view",
+            "value": 10
+        },
+        {
+            "name": "Attract attention",
+            "value": 10
+        },        {
+            "name": "Teach/Inform",
+            "value": 10
+        },        {
+            "name": "Change behavior",
+            "value": 10
+        },        {
+            "name": "Move viewers",
+            "value": 10
+        }
+
+    ],
+    "links": [
+        {
+            "source": 0,
+            "target": 1,
+            "value1": 10,
+            "value2": 8
+        },
+        {
+            "source": 1,
+            "target": 2,
+            "value1": 8,
+            "value2": 5
+        },
+        {
+            "source": 2,
+            "target": 3,
+            "value1": 5,
+            "value2": 8
+        },
+        {
+            "source": 2,
+            "target": 0,
+            "value1": 5,
+            "value2": 10
+        },
+        {
+            "source": 2,
+            "target": 1,
+            "value1": 5,
+            "value2": 8
+        },
+        {
+            "source": 3,
+            "target": 1,
+            "value1": 5,
+            "value2": 8
+        },
+        {
+            "source": 4,
+            "target": 1,
+            "value1": 5,
+            "value2": 8
+        },
+        {
+            "source": 5,
+            "target": 1,
+            "value1": 5,
+            "value2": 8
+        },
+        {
+            "source": 6,
+            "target": 1,
+            "value1": 5,
+            "value2": 8
+        },
+
+        {
+            "source": 7,
+            "target": 1,
+            "value1": 5,
+            "value2": 8
+        },
+        {
+            "source": 8,
+            "target": 1,
+            "value1": 5,
+            "value2": 8
+        },
+        {
+            "source": 9,
+            "target": 1,
+            "value1": 5,
+            "value2": 8
+        },
+        {
+            "source": 10,
+            "target": 1,
+            "value1": 5,
+            "value2": 8
+        },
+        {
+            "source": 11,
+            "target": 1,
+            "value1": 5,
+            "value2": 8
+        },
+        {
+            "source": 12,
+            "target": 1,
+            "value1": 5,
+            "value2": 8
+        },
+
+        {
+            "source": 13,
+            "target": 1,
+            "value1": 5,
+            "value2": 8
+        },
+
+        {
+            "source": 14,
+            "target": 1,
+            "value1": 5,
+            "value2": 8
+        },
+
+        {
+            "source": 15,
+            "target": 1,
+            "value1": 5,
+            "value2": 8
+        },
+
+        {
+            "source": 16,
+            "target": 1,
+            "value1": 5,
+            "value2": 8
+        },
+
+        {
+            "source": 17,
+            "target": 1,
+            "value1": 5,
+            "value2": 8
+        },
+
+        {
+            "source": 18,
+            "target": 1,
+            "value1": 5,
+            "value2": 8
+        },
+
+        {
+            "source": 19,
+            "target": 1,
+            "value1": 5,
+            "value2": 8
+        },
+
+        {
+            "source": 20,
+            "target": 1,
+            "value1": 5,
+            "value2": 8
+        },
+
+        {
+            "source": 21,
+            "target": 1,
+            "value1": 5,
+            "value2": 8
+        }
+
+    ]
+}
