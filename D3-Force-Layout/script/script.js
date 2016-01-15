@@ -11,14 +11,14 @@ var svg = d3.select('.canvas')
     .append('g')
     .attr('transform',"translate("+margin.l+","+margin.t+")");
 
-var scaleR = d3.scale.sqrt().domain([0, 10]).range([15, 100]);
+var scaleR = d3.scale.sqrt().domain([0, 10]).range([15, 50]);
 
 //TODO: customize the force layout
 var force = d3.layout.force()
-    .charge(-20) //allows us to set repulsion(-)/attraction(+) - default = -30?
-    .linkDistance(500) //represents how long the links should be in an ideal situation (equilibrium length) #s in pixel vals
+    .charge(-50) //allows us to set repulsion(-)/attraction(+) - default = -30?
+    .linkDistance(350) //represents how long the links should be in an ideal situation (equilibrium length) #s in pixel vals
                       //not strictly setting link length- just ideal value
-    .gravity(0.5) //from 0-1, weak attraction so nodes don't fly too far from center of page. Center is always center of width/height of forcelayout
+    .gravity(0.9) //from 0-1, weak attraction so nodes don't fly too far from center of page. Center is always center of width/height of forcelayout
     //can implement grav centers for different kinds of nodes, or that don't center on the screen - look at this in a later exercise
     .size([width,height])
     .friction(.1);  //0-1, higher value --> faster node motion in response to forces
@@ -49,12 +49,14 @@ d3.json('data/force.json',function(err,d){
             //nodes.attr('x', function(d) {return d.x})
             //    .attr('y', function(d){return d.y});
 
-            nodes.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+            nodes.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
+                .style('fill','rgb(160,160,160');
 
             links.attr('x1',function(d){return d.source.x})
                 .attr('y1',function(d){return d.source.y})
                 .attr('x2',function(d){return d.target.x})
-                .attr('y2',function(d){return d.target.y});
+                .attr('y2',function(d){return d.target.y})
+                .style('stroke','rgb(200,200,200)');
 
             var q = d3.geom.quadtree(d.nodes),
                 i = 0,
