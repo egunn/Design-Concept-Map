@@ -16,7 +16,7 @@ var scaleR = d3.scale.sqrt().domain([0, 10]).range([15, 100]);
 //TODO: customize the force layout
 var force = d3.layout.force()
     .charge(-20) //allows us to set repulsion(-)/attraction(+) - default = -30?
-    .linkDistance(400) //represents how long the links should be in an ideal situation (equilibrium length) #s in pixel vals
+    .linkDistance(500) //represents how long the links should be in an ideal situation (equilibrium length) #s in pixel vals
                       //not strictly setting link length- just ideal value
     .gravity(0.5) //from 0-1, weak attraction so nodes don't fly too far from center of page. Center is always center of width/height of forcelayout
     //can implement grav centers for different kinds of nodes, or that don't center on the screen - look at this in a later exercise
@@ -91,6 +91,7 @@ d3.json('data/force.json',function(err,d){
         .attr('cy', 0) //function(d){return d.y})
         .attr('r', function(d){ return scaleR(d.value)});
 
+    //draw the nodes
     var nodeLabels = nodes
         .append('text')
         .attr('class', 'label')
@@ -101,9 +102,13 @@ d3.json('data/force.json',function(err,d){
         //.attr('font-size', '10px');
         //.style('fill', 'rgb(235,235,235)');
 
-    nodes.selectAll('label')
+    //grab all of the text labels, and call the wrap function to make sure that the text fits inside the bubble.
+    nodes.selectAll('.label')
+        //passes the data joined to the selection to the wrap function, along with a width value (here, set to a constant;
+        //update later to adjust to the circle size)
         .call(wrap, 50);//function(d){console.log(scaleR(d.value)); return scaleR(d.value)}/2);
 
+    //draw the links
     var links = svg.selectAll('.link')
         .data(d.links)
         .enter()
@@ -149,33 +154,48 @@ function collide(dataPoint){
     }
 }
 
+//function to check the length of each line of text. If the line is too long, it will insert a span and create a new line
 function wrap(text, width) {
-    //console.log(text[0].parentNode);
-    console.log(text[0].parentNode.__data__.name);
-//!!!!!!!!!!!!!!!!!!! Returns an array of 22 arrays, all of length zero - not actually getting the text from the labels
-    //correct infomation inside the parentNode object, under data and in lastChild-->data
+    console.log(text);
     //from http://bl.ocks.org/mbostock/7555321
+
+    //for each element in the data matrix bound to the selection
     text.each(function(d,i) {
-        //console.log(text);
-        var text = d3.select(this),
+        //save the text stored in the .name attribute
+        var text = d3.select(this),//d[i].parentNode.__data__.name,
+            //split the text into separate words by cutting at the spaces
             words = text.text().split(/\s+/).reverse(),
+            //create some empty variables for later use
             word,
             line = [],
+        //set the line number and height, values for y and change in y attributes
             lineNumber = 0,
             lineHeight = 1.1, // ems
             y = text.attr("y"),
-            dy = parseFloat(text.attr("dy")),
+        //dy sets the positions of the tspan lines relative to one another; equivalent to a leading value
+            dy = 0,//parseFloat(text.attr("dy")),
+        //not 100% sure what this does; sets the text value to null, then appends a span with desired attributes
             tspan = text.text(null).append("tspan").attr("x", 0).attr("y", y).attr("dy", dy + "em");
-        console.log(words);
+        console.log(text[0][0]);
+        //when you get to the last word in the words variable,
         while (word = words.pop()) {
+            //put that word in the line array
             line.push(word);
+            //and join the line array into a string, inserting a space
             tspan.text(line.join(" "));
+            //.node returns the first non-null value in the array; compare its length with the width variable
             if (tspan.node().getComputedTextLength() > width) {
+                //take the last element from the line array
                 line.pop();
+                //and add a space
                 tspan.text(line.join(" "));
+                //insert the value of the word variable(?)
                 line = [word];
+                //and adjust the text position using tspan, incrementing the line number and height appropriately
                 tspan = text.append("tspan").attr("x", 0).attr("y", y).attr("dy", ++lineNumber * lineHeight + dy + "em").text(word);
-            }
+              }
         }
+        text.attr('transform','translate(0,' + -lineNumber*lineHeight*4 + ')');
+
     });
 }

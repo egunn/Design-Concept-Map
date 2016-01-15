@@ -1,0 +1,883 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 9200.15.1201.0018                                -->
+<workbook source-platform='win' version='9.2' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='data (network_graphs_example_data)' inline='true' name='excel-direct.0itmhr40bmekny1elcj9u0bp4t7u' version='9.2'>
+      <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:\Users\erica\Desktop\DesignTheory\Design-Concept-Map\Tableau\network_graphs_example_data.xlsx' interpretationMode='0' password='' server='' username='' validate='no'>
+        <relation name='data' table='[data$]' type='table'>
+          <columns gridOrigin='A1:P19:no:A1:P19:0' header='yes' outcome='6'>
+            <column datatype='integer' name='ID' ordinal='0' />
+            <column datatype='string' name='NodeName' ordinal='1' />
+            <column datatype='string' name='Initiating Persion' ordinal='2' />
+            <column datatype='string' name='Secondary Person' ordinal='3' />
+            <column datatype='string' name='Relationship' ordinal='4' />
+            <column datatype='integer' name='LineX' ordinal='5' />
+            <column datatype='integer' name='LineY' ordinal='6' />
+            <column datatype='integer' name='CircleY' ordinal='7' />
+            <column datatype='integer' name='Sales' ordinal='8' />
+            <column datatype='integer' name='Sales For Display' ordinal='9' />
+            <column datatype='integer' name='InDegree' ordinal='10' />
+            <column datatype='integer' name='OutDegree' ordinal='11' />
+            <column datatype='string' name='CustomerType' ordinal='12' />
+            <column datatype='string' name='Residence' ordinal='13' />
+            <column datatype='string' name='Direction' ordinal='14' />
+            <column datatype='integer' name='Total Sales' ordinal='15' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[data]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NodeName</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[NodeName]</local-name>
+            <parent-name>[data]</parent-name>
+            <remote-alias>NodeName</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Initiating Persion</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Initiating Persion]</local-name>
+            <parent-name>[data]</parent-name>
+            <remote-alias>Initiating Persion</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Secondary Person</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Secondary Person]</local-name>
+            <parent-name>[data]</parent-name>
+            <remote-alias>Secondary Person</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Relationship</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Relationship]</local-name>
+            <parent-name>[data]</parent-name>
+            <remote-alias>Relationship</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LineX</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LineX]</local-name>
+            <parent-name>[data]</parent-name>
+            <remote-alias>LineX</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LineY</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LineY]</local-name>
+            <parent-name>[data]</parent-name>
+            <remote-alias>LineY</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CircleY</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CircleY]</local-name>
+            <parent-name>[data]</parent-name>
+            <remote-alias>CircleY</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sales</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sales]</local-name>
+            <parent-name>[data]</parent-name>
+            <remote-alias>Sales</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sales For Display</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sales For Display]</local-name>
+            <parent-name>[data]</parent-name>
+            <remote-alias>Sales For Display</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InDegree</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[InDegree]</local-name>
+            <parent-name>[data]</parent-name>
+            <remote-alias>InDegree</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OutDegree</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OutDegree]</local-name>
+            <parent-name>[data]</parent-name>
+            <remote-alias>OutDegree</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CustomerType</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[CustomerType]</local-name>
+            <parent-name>[data]</parent-name>
+            <remote-alias>CustomerType</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Residence</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Residence]</local-name>
+            <parent-name>[data]</parent-name>
+            <remote-alias>Residence</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Direction</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Direction]</local-name>
+            <parent-name>[data]</parent-name>
+            <remote-alias>Direction</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Sales</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Sales]</local-name>
+            <parent-name>[data]</parent-name>
+            <remote-alias>Total Sales</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[data]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:P19:no:A1:P19:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Circle Y' datatype='integer' name='[CircleY]' role='measure' type='quantitative' />
+      <column caption='Customer Type' datatype='string' name='[CustomerType]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+      <column caption='In Degree' datatype='integer' name='[InDegree]' role='measure' type='quantitative' />
+      <column caption='Line X' datatype='integer' name='[LineX]' role='measure' type='quantitative' />
+      <column caption='Line Y' datatype='integer' name='[LineY]' role='measure' type='quantitative' />
+      <column caption='Node Name' datatype='string' name='[NodeName]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Out Degree' datatype='integer' name='[OutDegree]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection class='dataengine' dbname='C:\Users\erica\Desktop\Processing\data (network_graphs_example_data).tde' schema='Extract' tablename='Extract' update-time='01/14/2016 04:51:13 PM'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <calculations>
+            <calculation column='[Number of Records]' formula='1' />
+          </calculations>
+          <refresh>
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='18' timestamp-start='2016-01-14 16:51:13.370' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>CircleY</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[CircleY]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CircleY</remote-alias>
+              <ordinal>0</ordinal>
+              <family>data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>90900.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>5050.0</statistic>
+                <statistic aggregation='Min' datatype='integer'>700</statistic>
+                <statistic aggregation='Max' datatype='integer'>9000</statistic>
+                <statistic aggregation='Stdev' datatype='real'>2445.7045177689179</statistic>
+                <statistic aggregation='StdevP' datatype='real'>2376.7975653527305</statistic>
+                <statistic aggregation='Var' datatype='real'>5981470.5882352944</statistic>
+                <statistic aggregation='VarP' datatype='real'>5649166.666666667</statistic>
+                <statistic aggregation='Count' datatype='integer'>18</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>560730000.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CustomerType</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CustomerType]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CustomerType</remote-alias>
+              <ordinal>1</ordinal>
+              <family>data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;Corporate&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Personal&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>18</statistic>
+                <statistic aggregation='Median' datatype='string'>&quot;Personal&quot;</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US_CI&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>0</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Direction</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Direction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Direction</remote-alias>
+              <ordinal>2</ordinal>
+              <family>data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;In Degree&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Out Degree&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>18</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US_CI&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ID</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ID</remote-alias>
+              <ordinal>3</ordinal>
+              <family>data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>90.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>5.0</statistic>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>9</statistic>
+                <statistic aggregation='Stdev' datatype='real'>2.6568446566202857</statistic>
+                <statistic aggregation='StdevP' datatype='real'>2.5819888974716112</statistic>
+                <statistic aggregation='Var' datatype='real'>7.0588235294117645</statistic>
+                <statistic aggregation='VarP' datatype='real'>6.666666666666667</statistic>
+                <statistic aggregation='Count' datatype='integer'>18</statistic>
+                <statistic aggregation='Median' datatype='integer'>5</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>570.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>InDegree</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[InDegree]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>InDegree</remote-alias>
+              <ordinal>4</ordinal>
+              <family>data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>27.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>1.5</statistic>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>3</statistic>
+                <statistic aggregation='Stdev' datatype='real'>0.98518436614377802</statistic>
+                <statistic aggregation='StdevP' datatype='real'>0.9574271077563381</statistic>
+                <statistic aggregation='Var' datatype='real'>0.97058823529411764</statistic>
+                <statistic aggregation='VarP' datatype='real'>0.91666666666666663</statistic>
+                <statistic aggregation='Count' datatype='integer'>18</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>57.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Initiating Persion</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Initiating Persion]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Initiating Persion</remote-alias>
+              <ordinal>5</ordinal>
+              <family>data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;Bill&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Wayne&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>18</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US_CI&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LineX</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[LineX]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LineX</remote-alias>
+              <ordinal>6</ordinal>
+              <family>data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>98100.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>5450.0</statistic>
+                <statistic aggregation='Min' datatype='integer'>1200</statistic>
+                <statistic aggregation='Max' datatype='integer'>9500</statistic>
+                <statistic aggregation='Stdev' datatype='real'>2611.3440307739656</statistic>
+                <statistic aggregation='StdevP' datatype='real'>2537.7702373890702</statistic>
+                <statistic aggregation='Var' datatype='real'>6819117.6470588231</statistic>
+                <statistic aggregation='VarP' datatype='real'>6440277.777777778</statistic>
+                <statistic aggregation='Count' datatype='integer'>18</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>650570000.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LineY</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[LineY]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LineY</remote-alias>
+              <ordinal>7</ordinal>
+              <family>data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>90900.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>5050.0</statistic>
+                <statistic aggregation='Min' datatype='integer'>700</statistic>
+                <statistic aggregation='Max' datatype='integer'>9000</statistic>
+                <statistic aggregation='Stdev' datatype='real'>2445.7045177689179</statistic>
+                <statistic aggregation='StdevP' datatype='real'>2376.7975653527305</statistic>
+                <statistic aggregation='Var' datatype='real'>5981470.5882352944</statistic>
+                <statistic aggregation='VarP' datatype='real'>5649166.666666667</statistic>
+                <statistic aggregation='Count' datatype='integer'>18</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>560730000.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NodeName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[NodeName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NodeName</remote-alias>
+              <ordinal>8</ordinal>
+              <family>data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;Bill&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Wayne&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>18</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US_CI&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>5</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Records</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[Number of Records]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Records</remote-alias>
+              <ordinal>9</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>18.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>1.0</statistic>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>1</statistic>
+                <statistic aggregation='Stdev' datatype='real'>0.0</statistic>
+                <statistic aggregation='StdevP' datatype='real'>0.0</statistic>
+                <statistic aggregation='Var' datatype='real'>0.0</statistic>
+                <statistic aggregation='VarP' datatype='real'>0.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>18</statistic>
+                <statistic aggregation='Median' datatype='integer'>1</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>18.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OutDegree</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[OutDegree]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OutDegree</remote-alias>
+              <ordinal>10</ordinal>
+              <family>data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>21.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>1.1666666666666667</statistic>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>2</statistic>
+                <statistic aggregation='Stdev' datatype='real'>0.38348249442368521</statistic>
+                <statistic aggregation='StdevP' datatype='real'>0.37267799624996495</statistic>
+                <statistic aggregation='Var' datatype='real'>0.14705882352941177</statistic>
+                <statistic aggregation='VarP' datatype='real'>0.1388888888888889</statistic>
+                <statistic aggregation='Count' datatype='integer'>18</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>27.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Relationship</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Relationship]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Relationship</remote-alias>
+              <ordinal>11</ordinal>
+              <family>data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;Bill--&gt;Jane&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Wayne--&gt;Mary&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>18</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US_CI&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Residence</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Residence]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Residence</remote-alias>
+              <ordinal>12</ordinal>
+              <family>data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;CA&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;USA&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>18</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US_CI&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sales For Display</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[Sales For Display]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sales For Display</remote-alias>
+              <ordinal>13</ordinal>
+              <family>data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>89500.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>9944.4444444444453</statistic>
+                <statistic aggregation='Min' datatype='integer'>3000</statistic>
+                <statistic aggregation='Max' datatype='integer'>20000</statistic>
+                <statistic aggregation='Stdev' datatype='real'>5126.1854997432329</statistic>
+                <statistic aggregation='StdevP' datatype='real'>4833.014037984788</statistic>
+                <statistic aggregation='Var' datatype='real'>26277777.777777776</statistic>
+                <statistic aggregation='VarP' datatype='real'>23358024.691358026</statistic>
+                <statistic aggregation='Count' datatype='integer'>9</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>1100250000.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sales</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[Sales]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sales</remote-alias>
+              <ordinal>14</ordinal>
+              <family>data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>89500.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>4972.2222222222226</statistic>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>20000</statistic>
+                <statistic aggregation='Stdev' datatype='real'>6208.3251085614684</statistic>
+                <statistic aggregation='StdevP' datatype='real'>6033.4075092636922</statistic>
+                <statistic aggregation='Var' datatype='real'>38543300.65359477</statistic>
+                <statistic aggregation='VarP' datatype='real'>36402006.172839507</statistic>
+                <statistic aggregation='Count' datatype='integer'>18</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>1100250000.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Secondary Person</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Secondary Person]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Secondary Person</remote-alias>
+              <ordinal>15</ordinal>
+              <family>data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;Bill&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Wayne&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>18</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US_CI&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>3</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Sales</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[Total Sales]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total Sales</remote-alias>
+              <ordinal>16</ordinal>
+              <family>data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>223000.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>12388.888888888889</statistic>
+                <statistic aggregation='Min' datatype='integer'>3000</statistic>
+                <statistic aggregation='Max' datatype='integer'>29000</statistic>
+                <statistic aggregation='Stdev' datatype='real'>8393.8975654858496</statistic>
+                <statistic aggregation='StdevP' datatype='real'>8157.4021524345117</statistic>
+                <statistic aggregation='Var' datatype='real'>70457516.339869276</statistic>
+                <statistic aggregation='VarP' datatype='real'>66543209.876543209</statistic>
+                <statistic aggregation='Count' datatype='integer'>18</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>3960500000.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.484314' measure-ordering='alphabetic' measure-percentage='0.515686' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='28'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='144' name='Sheet 1' width='174'>
+      iVBORw0KGgoAAAANSUhEUgAAAK4AAACQCAYAAACRfFAzAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAABmUlEQVR4nO3SQQ0AIBDAMMC/58MDH7KkVbDH9szMgpjzOwBeGJck45JkXJKMS5JxSTIu
+      ScYlybgkGZck45JkXJKMS5JxSTIuScYlybgkGZck45JkXJKMS5JxSTIuScYlybgkGZck45Jk
+      XJKMS5JxSTIuScYlybgkGZck45JkXJKMS5JxSTIuScYlybgkGZck45JkXJKMS5JxSTIuScYl
+      ybgkGZck45JkXJKMS5JxSTIuScYlybgkGZck45JkXJKMS5JxSTIuScYlybgkGZck45JkXJKM
+      S5JxSTIuScYlybgkGZck45JkXJKMS5JxSTIuScYlybgkGZck45JkXJKMS5JxSTIuScYlybgk
+      GZck45JkXJKMS5JxSTIuScYlybgkGZck45JkXJKMS5JxSTIuScYlybgkGZck45JkXJKMS5Jx
+      STIuScYlybgkGZck45JkXJKMS5JxSTIuScYlybgkGZck45JkXJKMS5JxSTIuScYlybgkGZck
+      45JkXJKMS5JxSTIuScYlybgkGZck45JkXJKMS5JxSTIuSRePYgUc7kJNEQAAAABJRU5ErkJg
+      gg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
