@@ -1,0 +1,338 @@
+{
+    "nodes": [
+        {
+            "name": "Design",
+            "value": 10
+        },
+        {
+            "name": "Clear communication",
+            "value": 10
+        },
+        {
+            "name": "Visually compelling narrative",
+            "value": 8
+        },
+        {
+            "name": "Aesthetic value",
+            "value": 10
+        },
+        {
+            "name": "Present relevant information",
+            "value": 6
+        },
+        {
+            "name": "Organize in a clear hierarchy",
+            "value": 8
+        },
+        {
+            "name": "Tell a story",
+            "value": 8
+        },
+        {
+            "name": "Logical argument",
+            "value": 8
+        },        {
+            "name": "Empathy",
+            "value": 8
+        },        {
+            "name": "Perspective taking",
+            "value": 8
+        },        {
+            "name": "Cultural norms and shared values",
+            "value": 8
+        },        {
+            "name": "Solve problems",
+            "value": 10
+        },        {
+            "name": "Shared point of view",
+            "value": 6
+        },
+        {
+            "name": "Tools: typography, color, shape, line, etc.",
+            "value": 6
+        },        {
+            "name": "In a variety of media and venues",
+            "value": 6
+        },        {
+            "name": "Layers of information",
+            "value": 8
+        },        {
+            "name": "User needs",
+            "value": 8
+        },        {
+            "name": "Move viewers",
+            "value": 8
+        },
+        {
+            "name": "Attract attention",
+            "value": 8
+        },        {
+            "name": "Teach/Inform",
+            "value": 6
+        },        {
+            "name": "Change behavior",
+            "value": 6
+        },        {
+            "name": "Research",
+            "value": 8
+        }
+
+    ],
+    "links": [
+        {
+            "source": 0,
+            "target": 1,
+            "value1": 10,
+            "value2": 10
+        },
+        {
+            "source": 0,
+            "target": 11,
+            "value1": 10,
+            "value2": 10
+        },
+        {
+            "source": 0,
+            "target": 3,
+            "value1": 10,
+            "value2": 10
+        },
+        {
+            "source": 1,
+            "target": 4,
+            "value1": 10,
+            "value2": 6
+        },
+        {
+            "source": 1,
+            "target": 7,
+            "value1": 10,
+            "value2": 8
+        },
+        {
+            "source": 1,
+            "target": 5,
+            "value1": 10,
+            "value2": 8
+        },
+        {
+            "source": 2,
+            "target": 7,
+            "value1": 8,
+            "value2": 8
+        },
+        {
+            "source": 2,
+            "target": 3,
+            "value1": 8,
+            "value2": 10
+        },
+        {
+            "source": 2,
+            "target": 14,
+            "value1": 8,
+            "value2": 6
+        },
+
+        {
+            "source": 3,
+            "target": 18,
+            "value1": 10,
+            "value2": 8
+        },
+        {
+            "source": 3,
+            "target": 17,
+            "value1": 10,
+            "value2": 8
+        },
+        {
+            "source": 3,
+            "target": 10,
+            "value1": 10,
+            "value2": 8
+        },
+        {
+            "source": 4,
+            "target": 21,
+            "value1": 6,
+            "value2": 8
+        },
+        {
+            "source": 4,
+            "target": 10,
+            "value1": 6,
+            "value2": 8
+        },
+        {
+            "source": 4,
+            "target": 9,
+            "value1": 6,
+            "value2": 8
+        },
+
+        {
+            "source": 4,
+            "target": 8,
+            "value1": 6,
+            "value2": 8
+        },
+
+        {
+            "source": 4,
+            "target": 16,
+            "value1": 6,
+            "value2": 8
+        },
+
+        {
+            "source": 5,
+            "target": 6,
+            "value1": 8,
+            "value2": 8
+        },
+
+        {
+            "source": 5,
+            "target": 13,
+            "value1": 8,
+            "value2": 6
+        },
+
+        {
+            "source": 5,
+            "target": 7,
+            "value1": 8,
+            "value2": 8
+        },
+
+        {
+            "source": 6,
+            "target": 16,
+            "value1": 8,
+            "value2": 8
+        },
+
+        {
+            "source": 6,
+            "target": 8,
+            "value1": 8,
+            "value2": 8
+        },
+
+        {
+            "source": 6,
+            "target": 12,
+            "value1": 8,
+            "value2": 6
+        },
+
+        {
+            "source": 6,
+            "target": 20,
+            "value1": 8,
+            "value2": 6
+        },
+
+
+
+
+        {
+            "source": 6,
+            "target": 19,
+            "value1": 8,
+            "value2": 6
+        },        {
+            "source": 6,
+            "target": 17,
+            "value1": 8,
+            "value2": 8
+        },        {
+            "source": 6,
+            "target": 18,
+            "value1": 8,
+            "value2": 8
+        },        {
+            "source": 6,
+            "target": 15,
+            "value1": 8,
+            "value2": 8
+        },        {
+            "source": 6,
+            "target": 7,
+            "value1": 8,
+            "value2": 8
+        },        {
+            "source": 7,
+            "target": 21,
+            "value1": 8,
+            "value2": 8
+        },        {
+            "source": 7,
+            "target": 13,
+            "value1": 8,
+            "value2": 6
+        },        {
+            "source": 8,
+            "target": 16,
+            "value1": 8,
+            "value2": 8
+        },        {
+            "source": 8,
+            "target": 9,
+            "value1": 8,
+            "value2": 8
+        },        {
+            "source": 9,
+            "target": 10,
+            "value1": 8,
+            "value2": 8
+        },        {
+            "source": 10,
+            "target": 11,
+            "value1": 8,
+            "value2": 10
+        },        {
+            "source": 11,
+            "target": 20,
+            "value1": 10,
+            "value2": 6
+        },        {
+            "source": 12,
+            "target": 11,
+            "value1": 6,
+            "value2": 10
+        },        {
+            "source": 13,
+            "target": 15,
+            "value1": 6,
+            "value2": 8
+        },        {
+            "source": 13,
+            "target": 18,
+            "value1": 6,
+            "value2": 8
+        },        {
+            "source": 13,
+            "target": 14,
+            "value1": 6,
+            "value2": 6
+        },        {
+            "source": 17,
+            "target": 18,
+            "value1": 8,
+            "value2": 8
+        },        {
+            "source": 17,
+            "target": 19,
+            "value1": 8,
+            "value2": 6
+        },        {
+            "source": 17,
+            "target": 20,
+            "value1": 8,
+            "value2": 6
+        }
+
+    ]
+}
